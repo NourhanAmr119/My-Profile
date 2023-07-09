@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="vacation">
+        <blockquote style="color: white;"> Vacation Form Search </blockquote>
+    </div>
+    <br>
+    <div class="custom">   
+        <form>
+            <label for="empl" class="Choose"><b>Choose employee:</b></label>
+            <select class="select" id="emp">
+                <option value="">Name</option>
+                <option value="Ahmed">Ahmed</option>
+                <option value="Mohamed">Mohamed</option>
+                <option value="Ali">Ali</option>
+                <option value="Hassan">Hassan</option>
+                <option value="Mahmoud">Mahmoud</option>
+                <option value="Salah">Salah</option>
+            </select>
+        </form>
+        <br>
+        <button class="search" onclick="search()">search</button>
+        <!-- <button class="search" onclick="location.href='VactionForm.html'">search</button> -->
+
+    </div>
+    <script src="{% static 'js/VacationSearch.js'%}"></script>
+    
+
+{% endblock content%}

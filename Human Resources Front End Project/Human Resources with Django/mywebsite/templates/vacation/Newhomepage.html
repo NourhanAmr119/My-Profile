@@ -1,0 +1,75 @@
+
+{%load static%}
+
+<!DOCTYPE html >
+<html>
+    
+        <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                body {
+                   /* background-image: url("{% static 'image/BG.JPEG'%}"); */
+                    background-image: url("{% static 'image/image4.png'%}");
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size:cover;
+                }
+            </style>
+            
+            <title>Choose The Website</title>
+            <style>
+                button
+                {
+                  font-size:60px;
+                  padding:30px;
+                  border-radius:20px;
+                  margin:40px;
+                 }
+                  #btn1
+                  {
+                    background-color: rgb(100, 175, 161);
+                    position:fixed;
+                    left:50%;
+                    top:50%;
+                  }
+                  #btn2
+                  {
+                    background-color: rgb(100, 175, 161);
+                    position:fixed;
+                    right:50%;
+                    top:50%;
+                  }
+                  #btn3
+                  {
+                    background-color: rgb(100, 175, 161);
+                    position:fixed;
+                    left:50%;
+                    bottom:50%;
+                  }
+                  #btn4
+                  {
+                    background-color: rgb(100, 175, 161);
+                    position:fixed;
+                    right:50%;
+                    bottom:50%;
+                  }    
+              </style>
+          </head>
+          <body>
+            <form action="home.html" >
+               <button class="Human Resourses" onclick="submit()"id ="btn1" >Human Resoures</button>
+              </form>
+              <form>
+                <button id="btn2"class="Student Affairs " onclick="submit()">Student Affairs</button>
+                <button id="btn3"class="Higher Studies"onclicl="submit()">Higher Studies</button>
+                <button id="btn4"class="Laboratory Tracking"onclick="submit()">Laboratory Tracking</button>
+
+              </form>
+            <script src="{% static 'js/NewHome.js'%}"></script>
+
+          </body>
+          
+          </html>
+          

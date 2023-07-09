@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="custom">
+        <header>
+            <h1>Vacation Form</h1>
+        </header>
+        <div>
+            <p>
+                <label class="size"><b>ID</b> </label>
+                <input type="text" name="id" value="{{emp.id}}">
+                
+            </p>
+        </div>
+        <br>
+        <h2> <b>Date of vacation</b> </h2>
+    
+    
+        <div>
+            <label class="size"><b>From</b></label>
+            <input type="Date" name="Date"  readonly>
+        </div>
+        <br>
+        <div>
+            <label class="size"><b>To</b>  </label>
+            <input type="Date" name="Date" readonly>
+        </div>
+    
+        <br>
+        <form class="size">
+            <b> Reason of vacation </b>
+            <br>
+            <textarea cols="40" rows="4" readonly></textarea>
+            <br>
+    
+        </form>
+        <button class="search" onclick="approve()">Approve</button>
+        <button class="search" onclick="reject()">Reject</button>
+    </div>
+    <!-- <script src="VactionForm.js"></script> -->
+    <script src="{% static 'js/VacationForm.js'%}"></script>
+
+
+{% endblock content%}

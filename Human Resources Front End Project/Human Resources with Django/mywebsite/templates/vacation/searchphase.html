@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <h1>Search Page</h1>
+
+    <br>
+
+    <div class="custom">
+        <form>
+            <label for="empl" class="Choose"><b>Choose employee:</b></label>
+            <select class="select" id="emp">
+                <option value="">Name</option>
+                <option value="Ahmed">Ahmed</option>
+                <option value="Mohamed">Mohamed</option>
+                <option value="Ali">Ali</option>
+                <option value="Hassan">Hassan</option>
+                <option value="Mahmoud">Mahmoud</option>
+                <option value="Salah">Salah</option>
+            </select>
+        </form>
+        <br>
+    
+        <div style="margin-top: 10px">
+            <button class="search" onclick="search()">search</button>
+    
+        </div>
+    </div>
+    <script src="{% static 'js/search.js'%}"></script>
+
+
+{% endblock content%}

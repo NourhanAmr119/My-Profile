@@ -1,0 +1,39 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    {% include 'style.html' %}
+    <title>Table Page</title>
+    <link rel="stylesheet" href="{% static '/CSS/custom.css' %}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    
+    {% block content %}
+
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="{% static 'css/VacationSearch.css'%}">
+<link rel="stylesheet" href="{% static 'js/VacationSearch.js'%}">
+<link rel="stylesheet" href="{% static 'js/home.js'%}">
+<link rel="stylesheet" href="{% static 'css/VactionForm.css'%}"> 
+<link rel="stylesheet" href="{% static 'js/VactionForm.js'%}">
+<link rel="stylesheet" href="{% static 'js/editpage.js'%}">
+<link rel="stylesheet" href="{% static 'js/AddNewUser.js'%}">
+<link rel="stylesheet" href="{% static 'js/searchphase.js'%}">
+<link rel="stylesheet" href="{% static 'js/NewHome.js'%}">
+<link rel="stylesheet" href="{% static 'js/search.js'%}">
+</body>
+</html>

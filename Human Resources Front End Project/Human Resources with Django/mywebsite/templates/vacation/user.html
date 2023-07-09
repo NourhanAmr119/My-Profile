@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <section>
+        <header>
+            <h1>User Info Page</h1>
+        </header>
+        <form>
+            {% CSRF_token %}
+            <div>
+                <label><b>ID</b></label>
+                <input type="text" id="id" name="ID" required placeholder="{{emp.id}}">
+
+            </div>
+            <br>
+            <div>
+                <label><b>Name</b> </label>
+                <input type="text" id="name" required placeholder="{{emp.name}}">
+            </div>
+            <br>
+            <div>
+                <label><b>E-mail</b></label>
+                <input type="email" id="email" required placeholder="{{emp.Email}}">
+            </div>
+            <br>
+            <div>
+                <label><b>Address</b></label>
+                <input type="text" id="address" required placeholder="{{emp.gender}}">
+            </div>
+            <br>
+            <div>
+                <label><b>Phone number</b> </label>
+                <input type="text" id="phone" required placeholder="{{emp.PhoneNumber}}">
+            </div>
+            <br>
+            <div>
+                <label><b>Gender</b></label>
+                <input type="radio" name="gender" value="male" required placeholder="{{emp.Gender}}"/>
+                <label>Male</label>
+                <input type="radio" name="gender" value="Female" required />
+                <label>Female</label>
+            </div>
+            <br>
+            <div>
+                <label><b>Marital status</b></label>
+                <input type="radio" name="Martual status" value="Single" required />
+                <label>Single</label>
+                <input type="radio" name="Martual status" value="married" required />
+                <label>married</label>
+            </div>
+            <br>
+            <div>
+                <label><b>Number of available vacation days</b></label>
+                <input type="number" name="Number of available vacation days " id="vdays" required placeholder="{{emp.NumberOfAvailableVacationDays }}"/>
+            </div>
+            <br>
+            <div>
+                <label><b>Number of actual approved vacation days</b></label>
+                <input type="number" name="Number of actual approved vacation days " id="avdays" required  placeholder="{{emp.NumberOfActualApprovedVacationDays}}" />
+            </div>
+            <br>
+            <div>
+                <label><b>Salary</b></label>
+                <input type="text" name="salary" id="salary" required  placeholder="{{emp.Salary}}"/>
+            </div>
+            <br>
+            <div>
+                <label><b>Date of Birth</b></label>
+                <input type="Date" name="Date" required  placeholder="{{emp.dateOfBirth}}" />
+            </div>
+            <br>
+            <div>
+            <br>
+            <div>
+                <label><b>Salary</b></label>
+                <input type="text" name="salary" value="$2000" disabled />
+            </div>
+            <br>
+            <div>
+                <label><b>Date of Birth</b></label>
+                <input type="Date" name="Date" value="01/01/2000" disabled />
+            </div>
+        </form>
+        <br>
+        <form action="EditPage.html">
+            <input type="submit" value="Edit">
+        </form>
+
+    </section>
+    {% endblock content %}

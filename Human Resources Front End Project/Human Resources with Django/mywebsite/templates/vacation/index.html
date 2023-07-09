@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+		<div class="container">
+			<Nav class="navbar">
+				<ul class="navbar-item">
+					<li class="navbar-items"> <a class="navbar-link" href="home.html">Home Page</a>
+					<li class="navbar-items"> <a class="navbar-link" href="page1.html">Add A New User</a> </li>
+					<li class="navbar-items"> <a class="navbar-link" href="searchphase.html">Table Search</a></li>
+					<li class="navbar-items"> <a class="navbar-link" href="VacationSearch.html">Vaction Page</a></li>
+				</ul>
+			</Nav>
+			</Nav>
+		</div>
+		<br>
+		<div class="custom">
+			<h1>Please fill out this form to add a new employee</h1>
+			<form  onsubmit="checkform();"method ="POST", id="new_user_form">
+			    {% csrf_token %}
+				<div>
+					<p>
+						<label><b>ID</b> &nbsp &nbsp &nbsp</label>
+						<input type="text" name="id" placeholder="Write 8 Digits" id="demo" autofocus required >
+					</p>
+				</div>
+				<br>
+				<div>
+	          
+					<label><b>Name</b></label>
+					<input type="text" name="Name" id="demo2" required >
+				</div>
+				<br>
+				<div>
+					<label><b>Email</b></label>
+					<input type="email" name="Email" placeholder="Write a valid Email"  id="demo4"required>
+				</div>
+				<div>
+					<br>
+					<label><b>Address</b></label>
+					<input type="text" name="Address"id="demo3"required >
+				</div>
+				<br>
+				<div>
+					<label><b>Phone Number</b></label>
+					<input type="text" name="PhoneNumber" id="demo1" required>
+				</div>
+				<br>
+				<div>
+					<label><b>Gender</b></label>
+					<input type="radio" name="gender" value="male" id="demo5" required>
+					<label>Male</label>
+					<input type="radio" name="gender" value="Female" id="demo6" required>
+					<label>Female</label>
+				</div>
+				<br>
+				<div>
+					<label><b>Martual status</b></label>
+					<input type="radio" name="Martual" value="Single"  id="demo7"required>
+					<label>Single</label>
+					<input type="radio" name="Martual" value="married" id="demo8" required>
+					<label>married</label>
+				</div>
+				<br>
+				<div>
+					<label><b>Number of available vacation days</b></label>
+					<input type="text" name="availableVacation"id="demo9"required >
+				</div>
+				<br>
+				<div>
+					<label><b>Number of actual approved vacation days</b></label>
+					<input type="text" name="approvedvacation"id="demo10" required >
+				</div>
+				<br>
+				<div>
+					<label><b>Salary</b></label>
+					<input type="text" name="salary"id="demo11" required >
+				</div>
+				<br>
+				<div>
+					<label><b>Date of Birth</b></label>
+					<input type="Date" name="Date" id="demo12" required>
+				</div>
+				
+				<br>
+				<input type="submit" value="Submit" id="save" />
+				<input type="submit" value="reset" />
+	
+	
+			</form>
+		</div>
+		<script src="{% static 'js/page1.js'%}"></script>
+		<script>
+			$(document).on('#save',"#new_user_form",function(e){ 
+		  e.preventDefault(); 
+		  $.ajax({ 
+			  type:'POST', 
+			  url:'', 
+			  data:{ 
+				ID:$('#demo').val(), 
+				Name:$('#demo2').val(), 
+			    Email:$('#demo4').val(), 
+			   Address:$('#demo3').val(), 
+				PhoneNumber:$('#demo1').val(), 
+				availableVacation:$('demo9').val(),
+			   approvedvacation:$('#demo10').val(), 
+			   salary:$('#demo11').val(), 
+			   date:$('#demo12').val(), 
+				
+				csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(), 
+			  }, 
+			   
+		 
+		  }); 
+		});
+			</script>
+{% endblock content %}

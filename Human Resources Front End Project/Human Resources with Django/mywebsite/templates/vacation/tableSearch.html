@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>Search Page</h1>
+
+    <br>
+
+    <div class="custom">
+        <form method="GET" action="{% url 'table'%}">
+            <label for="empl" class="Choose" name ="emp"><b>Choose employee:</b></label>
+            <input id="emp" name="empName" type="search" >
+        </form>
+        <br>
+    
+        <div style="margin-top: 10px">
+            <button  onclick="search()">search</button>
+    
+        </div>
+    </div>
+    {% endblock content%}
