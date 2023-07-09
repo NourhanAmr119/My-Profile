@@ -1,0 +1,108 @@
+<!<!DOCTYPE html >
+<html>
+<head>
+	<meta charset="UTF_8" />
+	<title>New User</title>
+	<style>
+		body {
+			background-image: url("BG.jpeg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+	</style>
+	
+		
+    <link rel="stylesheet" href="custom.css">
+</head>
+	<body>
+		<div class="container">
+			<Nav class="navbar">
+				<ul class="navbar-item">
+					<li class="navbar-items"> <a class="navbar-link" href="home.html">Home Page</a>
+					<li class="navbar-items"> <a class="navbar-link" href="page1.html">Add A New User</a> </li>
+					<li class="navbar-items"> <a class="navbar-link" href="searchphase.html">Table Search</a></li>
+					<li class="navbar-items"> <a class="navbar-link" href="VacationSearch.html">Vaction Page</a></li>
+				</ul>
+			</Nav>
+			</Nav>
+		</div>
+		<br>
+		<div class="custom">
+			<h1>Please fill out this form to add a new employee</h1>
+			<form  onsubmit="checkform();"method ="post">
+			
+				<div>
+					<p>
+						<label><b>ID</b> &nbsp &nbsp &nbsp</label>
+						<input type="text" name="id" placeholder="Write 8 Digits" id="demo" autofocus required >
+					</p>
+				</div>
+				<br>
+				<div>
+	
+					<label><b>Name</b></label>
+					<input type="text" name="Name" id="demo2" required >
+				</div>
+				<br>
+				<div>
+					<label><b>Email</b></label>
+					<input type="email" name="Email" placeholder="Write a valid Email"  id="demo4"required>
+				</div>
+				<div>
+					<br>
+					<label><b>Address</b></label>
+					<input type="text" name="Address"id="demo3"required >
+				</div>
+				<br>
+				<div>
+					<label><b>Phone Number</b></label>
+					<input type="text" name="PhoneNumber" value="+2"id="demo1" required>
+				</div>
+				<br>
+				<div>
+					<label><b>Gender</b></label>
+					<input type="radio" name="gender" value="male" id="demo5" required>
+					<label>Male</label>
+					<input type="radio" name="gender" value="Female" id="demo5" required>
+					<label>Female</label>
+				</div>
+				<br>
+				<div>
+					<label><b>Martual status</b></label>
+					<input type="radio" name="Martual status" value="Single"  id="demo6"required>
+					<label>Single</label>
+					<input type="radio" name="Martual status" value="married" id="demo6" required>
+					<label>married</label>
+				</div>
+				<br>
+				<div>
+					<label><b>Number of available vacation days</b></label>
+					<input type="number" name="Number of available vacation days "id="demo7"required >
+				</div>
+				<br>
+				<div>
+					<label><b>Number of actual approved vacation days</b></label>
+					<input type="number" name="Number of actual approved vacation days "id="demo8" required >
+				</div>
+				<br>
+				<div>
+					<label><b>Salary</b></label>
+					<input type="text" name="salary"id="demo9" required >
+				</div>
+				<br>
+				<div>
+					<label><b>Date of Birth</b></label>
+					<input type="Date" name="Date" id="demo10" required>
+				</div>
+				<br>
+				<input type="submit" value="Submit" />
+				<input type="submit" value="reset" />
+	
+	
+			</form>
+		</div>
+		<script src="page1.js"></script>
+	</body>
+</html>
+

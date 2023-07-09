@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title> Employee</title>
+    <style>
+        body {
+            background-image: url("bg.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        blockquote {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px
+        }
+    </style>
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <div class="container">
+        <Nav class="navbar">
+            <ul class="navbar-item">
+                <li class="navbar-items"> <a class="navbar-link" onclick="home()">Home Page</a> </li>
+                <li class="navbar-items"> <a class="navbar-link" onclick="add()">Add A New User</a> </li>
+                <li class="navbar-items"> <a class="navbar-link" onclick="table()">Table Search</a></li>
+                <li class="navbar-items"> <a class="navbar-link" onclick="vacation()">Vaction Page</a></li>
+            </ul>
+        </Nav>
+    </div>
+    <div class="vacation">
+        <blockquote style="color: white;"> Vacation Form Search </blockquote>
+    </div>
+    <br>
+    <div class="custom">   
+        <form>
+            <label for="empl" class="Choose"><b>Choose employee:</b></label>
+            <select class="select" id="emp">
+                <option value="">Name</option>
+                <option value="Ahmed">Ahmed</option>
+                <option value="Mohamed">Mohamed</option>
+                <option value="Ali">Ali</option>
+                <option value="Hassan">Hassan</option>
+                <option value="Mahmoud">Mahmoud</option>
+                <option value="Salah">Salah</option>
+            </select>
+        </form>
+        <br>
+        <button class="search" onclick="search()">search</button>
+    </div>
+    <script src="VacationSearch.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.vacation {
+    font-size: xx-large;
+    text-align: center;
+    background-color: teal;
+    height: 50px;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: slateblue;
+    width: 35%;
+}
+
+.Choose {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.box {
+    font-size: 20px;
+}
+
+.search {
+    font-size: 20px;
+}
+
+a {
+    color: white;
+}
+/*
+.navbar-list {
+    list-style: none;
+}*/
+
+.navbar-items {
+    display: inline-block;
+    width: 8rem;
+    text-align: center;
+    line-height: 50px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    display: block;
+}
+
+.navbar-items:hover {
+    background-color: black;
+    transition: 0.8s;
+}

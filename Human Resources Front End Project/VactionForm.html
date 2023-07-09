@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Vacation Form</title>
+    <style>
+        body {
+            background-image: url("BG.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .custom header h1 {
+            background-color: #333;
+            text-align: center;
+            color: #EEE;
+            padding: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <div class="container">
+        <Nav class="navbar">
+            <ul class="navbar-item">
+                <li class="navbar-items"> <a class="navbar-link" onclick="home()">Home Page</a> </li>
+                <li class="navbar-items"> <a class="navbar-link" onclick="add()">Add A New User</a> </li>
+                <li class="navbar-items"> <a class="navbar-link" onclick="table()">Table Search</a></li>
+                <li class="navbar-items"> <a class="navbar-link" onclick="vacation()">Vaction Page</a></li>
+            </ul>
+        </Nav>
+    </div>
+    <div class="custom">
+        <header>
+            <h1>Vacation Form</h1>
+        </header>
+        <div>
+            <p>
+                <label class="size"><b>ID</b> </label>
+                <input type="text" name="id" readonly>
+            </p>
+        </div>
+        <br>
+        <h2> <b>Date of vacation</b> </h2>
+    
+    
+        <div>
+            <label class="size"><b>From</b></label>
+            <input type="Date" name="Date" readonly">
+        </div>
+        <br>
+        <div>
+            <label class="size"><b>To</b>  </label>
+            <input type="Date" name="Date" readonly>
+        </div>
+    
+        <br>
+        <form class="size">
+            <b> Reason of vacation </b>
+            <br>
+            <textarea cols="40" rows="4" readonly></textarea>
+            <br>
+    
+        </form>
+        <button class="search" onclick="approve()">Approve</button>
+        <button class="search" onclick="reject()">Reject</button>
+    </div>
+    <script src="VactionForm.js"></script>
+</body>
+</html>

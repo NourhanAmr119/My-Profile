@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <style>
+        body {
+            background-image: url("BG.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <div class="container">
+        <Nav class="navbar">
+            <ul class="navbar-item">
+                <li class="navbar-items"> <a class="navbar-link" href="home.html">Home Page</a>
+                <li class="navbar-items"> <a class="navbar-link" href="page1.html">Add A New User</a> </li>
+                <li class="navbar-items"> <a class="navbar-link" href="searchphase.html">Table Search</a></li>
+                <li class="navbar-items"> <a class="navbar-link" href="VacationSearch.html">Vaction Page</a></li>
+            </ul>
+        </Nav>
+    </div>
+
+    <br>
+    <section>
+        <header>
+            <h1>User Info Page</h1>
+        </header>
+        <form>
+            <div>
+                <label><b>ID</b></label>
+                <input type="text" disabled>
+            </div>
+            <br>
+            <div>
+                <label><b>Name</b> </label>
+                <input type="text" disabled>
+            </div>
+            <br>
+            <div>
+                <label><b>E-mail</b></label>
+                <input type="email" disabled>
+            </div>
+            <br>
+            <div>
+                <label><b>Address</b></label>
+                <input type="text" disabled>
+            </div>
+            <br>
+            <div>
+                <label><b>Phone number</b> </label>
+                <input type="text" disabled>
+            </div>
+            <br>
+            <div>
+                <label><b>Gender</b></label>
+                <input type="radio" name="gender" value="male" disabled checked />
+                <label>Male</label>
+                <input type="radio" name="gender" value="Female" required />
+                <label>Female</label>
+            </div>
+            <br>
+            <div>
+                <label><b>Marital status</b></label>
+                <input type="radio" name="Martual status" value="Single" checked disabled />
+                <label>Single</label>
+                <input type="radio" name="Martual status" value="married" required />
+                <label>married</label>
+            </div>
+            <br>
+            <div>
+                <label><b>Number of available vacation days</b></label>
+                <input type="number" name="Number of available vacation days " disabled />
+            </div>
+            <br>
+            <div>
+                <label><b>Number of actual approved vacation days</b></label>
+                <input type="number" name="Number of actual approved vacation days" disabled />
+            </div>
+            <br>
+            <div>
+                <label><b>Salary</b></label>
+                <input type="text" name="salary" value="$2000" disabled />
+            </div>
+            <br>
+            <div>
+                <label><b>Date of Birth</b></label>
+                <input type="Date" name="Date" value="01/01/2000" disabled />
+            </div>
+        </form>
+        <br>
+        <form action="EditPage.html">
+            <input type="submit" value="Edit">
+        </form>
+
+    </section>
+</body>
+</html>

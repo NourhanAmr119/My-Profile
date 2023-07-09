@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>Search Page</title>
+    <style>
+        body {
+            background-image: url("BG.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        h1 {
+            background-color: #333;
+            color: #EEE;
+            text-align: center;
+            padding: 15px
+        }
+    </style>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <div class="container">
+        <Nav class="navbar">
+            <ul class="navbar-item">
+                <li class="navbar-items"> <a class="navbar-link" href="home.html">Home Page</a>
+                <li class="navbar-items"> <a class="navbar-link" href="page1.html">Add A New User</a> </li>
+                <li class="navbar-items"> <a class="navbar-link" href="searchphase.html">Table Search</a></li>
+                <li class="navbar-items"> <a class="navbar-link" href="VacationSearch.html">Vaction Page</a></li>
+            </ul>
+        </Nav>
+    </div>
+    <h1>Search Page</h1>
+
+    <br>
+
+    <div class="custom">
+        <form>
+            <label for="empl" class="Choose"><b>Choose employee:</b></label>
+            <select class="select" id="emp">
+                <option value="">Name</option>
+                <option value="Ahmed">Ahmed</option>
+                <option value="Mohamed">Mohamed</option>
+                <option value="Ali">Ali</option>
+                <option value="Hassan">Hassan</option>
+                <option value="Mahmoud">Mahmoud</option>
+                <option value="Salah">Salah</option>
+            </select>
+        </form>
+        <br>
+    
+        <div style="margin-top: 10px">
+            <button class="search" onclick="search()">search</button>
+    
+        </div>
+    </div>
+    <script src="search.js"></script>
+</body>
+</html>
